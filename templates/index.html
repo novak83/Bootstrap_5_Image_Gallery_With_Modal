@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap 5 Image Gallery With Modal</title>
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <section class="gallery min-vh-100">
+        <div class="container-lg">
+            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                <div class="col">
+                    <img src="/static/img/01_guitar_hat.jpg" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="/static/img/02_guitar_hat_boots.jpg" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="/static/img/03_guitar_hat_boots.jpg" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="/static/img/04_hat_boots.jpg" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="/static/img/05_hat.jpg" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="/static/img/06_hat_boots_flag.jpg" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="/static/img/07_country_music_hat.jpg" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="/static/img/08_country_music_club.jpg" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="/static/img/09_country_music.png" class="gallery-item" alt="gallery">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Modal -->
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Country</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="/static/img/01_guitar_hat.jpg" class="modal-img" alt="modal img">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>
